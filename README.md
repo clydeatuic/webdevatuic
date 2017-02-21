@@ -43,6 +43,8 @@ var server = app.listen(3001, function(){
 * ```$ git init```
 * ```$ git config user.email "youremailusedingithub@domain.com"```
 * ```$ git config user.name "yourgithubname"```
+* ```$ git status```
+* ```$ git add .```
 * ```$ git commit -m "my first commit"```
 * ```$ git remote add origin https://github.com/yourgithubusername/yourgithubrepo.git```
 * ```$ git push -u origin master```
