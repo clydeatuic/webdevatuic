@@ -1,2 +1,37 @@
 # webdevatuic
 Setup app guide for web development using node +  express + git + github + sublime
+
+## Setup Tools
+* Verify nodeJS version. ```$ node --version```
+* Verify npm version. ```$ npm --version```
+* Verify git version. ```$ git --version```
+* Verify sublime version. ```$ subl --version```
+
+## Setup Web App Framework (Express JS)
+* Create a local repository. ```$ cd desktop && mkdir lastname-022317 && cd lastname-022317```
+* Launch sublime text editor. ```$ subl .```
+* Create simple express tree. ```$ mkdir public && mkdir views```
+```
++-- lastname-022317
+| `-- public
+| `-- views
+```
+* Create ```package.json```. ```$ npm init -y```
+* Install express as dependency. ```$ npm install express --save```
+* Write the following server script. ```javascript
+//require modules
+var express = require('express');
+var path = require('path');
+//instantiate express
+var app = express();
+//use static files
+app.use(express.static(path.join(__dirname, 'public')));
+//express routes
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+//express server listen
+var server = app.listen(3001, function(){
+  console.log('Server listening on port 3001');
+});
+```
