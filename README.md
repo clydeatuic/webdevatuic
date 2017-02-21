@@ -1,13 +1,13 @@
 # webdevatuic
 Setup app guide for web development using node +  express + git + github + sublime
 
-## Setup Tools
+## 1. Setup Tools
 * Verify nodeJS version. ```$ node --version```
 * Verify npm version. ```$ npm --version```
 * Verify git version. ```$ git --version```
 * Verify sublime version. ```$ subl --version```
 
-## Setup Web App Framework (Express JS)
+## 2. Setup Web App Framework (Express JS)
 * Create a local repository. ```$ cd desktop && mkdir lastname-022317 && cd lastname-022317```
 * Launch sublime text editor. ```$ subl .```
 * Create simple express tree. ```$ mkdir public && mkdir views```
@@ -18,7 +18,7 @@ Setup app guide for web development using node +  express + git + github + subli
 ```
 * Create ```package.json```. ```$ npm init -y```
 * Install express as dependency. ```$ npm install express --save```
-* Write the following server script. 
+* Create new file ```app.js``` then write the following server script:
 ```javascript
 //require modules
 var express = require('express');
@@ -37,7 +37,7 @@ var server = app.listen(3001, function(){
 });
 ```
 
-## Upload files to remote repository (Github)
+## 3. Upload files to remote repository (Github)
 * Create new github remote repository
 * $ git init
 * $ git config user.email "youremailusedingithub@domain.com"
