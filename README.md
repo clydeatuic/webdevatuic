@@ -39,9 +39,10 @@ var server = app.listen(3001, function(){
 
 ## 3. Upload files to remote repository (Github)
 * Create new github remote repository
-* $ git init
-* $ git config user.email "youremailusedingithub@domain.com"
-* $ git config user.name "yourgithubname"
-* $ git commit -m "my first commit"
-* $ git remote add origin https://github.com/yourgithubusername/yourgithubrepo.git
-* $ git push -u origin master
+* Create ```.gitignore``` file and write ```node_modules``` inside.
+* ```$ git init```
+* ```$ git config user.email "youremailusedingithub@domain.com"```
+* ```$ git config user.name "yourgithubname"```
+* ```$ git commit -m "my first commit"```
+* ```$ git remote add origin https://github.com/yourgithubusername/yourgithubrepo.git```
+* ```$ git push -u origin master```
