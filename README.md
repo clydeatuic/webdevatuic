@@ -18,7 +18,8 @@ Setup app guide for web development using node +  express + git + github + subli
 ```
 * Create ```package.json```. ```$ npm init -y```
 * Install express as dependency. ```$ npm install express --save```
-* Write the following server script. ```javascript
+* Write the following server script. 
+```javascript
 //require modules
 var express = require('express');
 var path = require('path');
@@ -35,3 +36,12 @@ var server = app.listen(3001, function(){
   console.log('Server listening on port 3001');
 });
 ```
+
+## Upload files to remote repository (Github)
+* Create new github remote repository
+* $ git init
+* $ git config user.email "youremailusedingithub@domain.com"
+* $ git config user.name "yourgithubname"
+* $ git commit -m "my first commit"
+* $ git remote add origin https://github.com/yourgithubusername/yourgithubrepo.git
+* $ git push -u origin master
