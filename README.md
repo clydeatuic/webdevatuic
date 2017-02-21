@@ -66,7 +66,7 @@ var server = app.listen(3001, function(){
 * ```$ git push -u origin master```
 
 ## 4. Deploy to heroku
-* ```$ git init```
+* ```$ heroku create lastname```
 * ```$ git config user.email "youremailusedingithub@domain.com"```
 * ```$ git config user.name "yourgithubname"```
 * ```$ git status```
