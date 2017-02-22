@@ -1,5 +1,5 @@
-# webdevatuic
-Setup app guide for web development using node +  express + git + github + sublime
+# Activity 1
+Web Dev't Boilerplate using Express
 
 ## 1. Setup Tools
 * Verify nodeJS version. ```$ node --version```
@@ -32,6 +32,7 @@ Setup app guide for web development using node +  express + git + github + subli
 
 ```
 	```server.js```
+
 	```javascript
 	//require modules
 	var express = require('express');
