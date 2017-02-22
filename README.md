@@ -32,10 +32,8 @@ Web Dev't Boilerplate using Express
 
 ```
 
-	* Code for ```server.js```
-
-
 	```javascript
+	//server.js
 	//require modules
 	var express = require('express');
 	var path = require('path');
