@@ -31,32 +31,32 @@ Setup app guide for web development using node +  express + git + github + subli
 | `-- server.js
 
 ```
-* Open ```server.js``` file then write the following server script:
-```javascript
-//require modules
-var express = require('express');
-var path = require('path');
-//instantiate express
-var app = express();
-//set port
-app.set('port', (process.env.PORT || 5000));
-//use static files
-app.use(express.static(path.join(__dirname, 'public')));
-//express routes
-app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/index.html'));
-});
-app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/about.html'));
-});
-app.get('*', function(req, res){
-  res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
-});
-//express server listen
-var server = app.listen(app.get('port'), function(){
-  console.log('Server listening on port ',app.get('port'));
-});
-```
+	```server.js```
+	```javascript
+	//require modules
+	var express = require('express');
+	var path = require('path');
+	//instantiate express
+	var app = express();
+	//set port
+	app.set('port', (process.env.PORT || 5000));
+	//use static files
+	app.use(express.static(path.join(__dirname, 'public')));
+	//express routes
+	app.get('/', function(req, res){
+	  res.sendFile(path.join(__dirname, 'views/index.html'));
+	});
+	app.get('/about', function(req, res){
+	  res.sendFile(path.join(__dirname, 'views/about.html'));
+	});
+	app.get('*', function(req, res){
+	  res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
+	});
+	//express server listen
+	var server = app.listen(app.get('port'), function(){
+	  console.log('Server listening on port ',app.get('port'));
+	});
+	```
 
 ## 3. Upload files to remote repository (Github)
 * Create new github remote repository
@@ -77,3 +77,4 @@ var server = app.listen(app.get('port'), function(){
 * ```$ git add .```
 * ```$ git commit -m "deploy to heroku"```
 * ```$ git push -u heroku master```
+* ```$ heroku open```
