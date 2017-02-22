@@ -28,7 +28,7 @@ Web Dev't Boilerplate using Express
 | `-- package.json
 | `-- Procfile
 | `-- README.md
-| `-- [server.js](https://github.com/clydeatuic/webdevatuic/blob/master/server.js)
+| `-- server.js
 
 ```
 
@@ -57,6 +57,38 @@ app.get('*', function(req, res){
 var server = app.listen(app.get('port'), function(){
   console.log('Server listening on port ',app.get('port'));
 });
+```
+
+```html
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web App</title>
+</head>
+<body>
+	<h1>Welcome to my web app!</h1>
+	<img src="img/winteriscoming.jpg" />
+
+	<br>
+	<a href="/">Home</a> |
+	<a href="/about">About</a> 
+</body>
+</html>
+```
+
+```html
+<!--404.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Page</title>
+</head>
+<body>
+	<h1>Error 404: Page cannot be found!</h1>
+	<p>Click <a href="/">here</a> to return to main page</p>
+</body>
+</html>
 ```
 
 ## 3. Upload files to remote repository (Github)
