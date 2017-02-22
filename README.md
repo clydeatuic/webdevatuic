@@ -28,7 +28,7 @@ Web Dev't Boilerplate using Express
 | `-- package.json
 | `-- Procfile
 | `-- README.md
-| `-- server.js
+| `-- [server.js](https://github.com/clydeatuic/webdevatuic/blob/master/server.js)
 
 ```
 
