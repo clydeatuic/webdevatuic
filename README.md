@@ -19,6 +19,8 @@ Web Dev't Boilerplate using Express
 | +-- public
 | | +-- css
 | | | `-- app.css
+| | +-- img
+| | | `-- winteriscomming.jpg
 | | +-- js
 | | | `-- app.js
 | +-- views
@@ -90,6 +92,8 @@ var server = app.listen(app.get('port'), function(){
 </body>
 </html>
 ```
+
+* Download images [here](https://drive.google.com/drive/folders/0By-aduulSKAMU3RxUm16Vm04cU0?usp=sharing)
 
 ## 3. Upload files to remote repository (Github)
 * Create new github remote repository
