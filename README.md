@@ -31,7 +31,8 @@ Web Dev't Boilerplate using Express
 | `-- server.js
 
 ```
-	```server.js```
+
+	* Code for ```server.js```
 
 	```javascript
 	//require modules
