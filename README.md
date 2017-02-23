@@ -106,6 +106,7 @@ var server = app.listen(app.get('port'), function(){
 * ```$ git commit -m "my first commit"```
 * ```$ git remote add origin https://github.com/yourgithubusername/yourgithubrepo.git```
 * ```$ git push -u origin master```
+* Open your web app at http://localhost:5000 ```$ node server.js```
 
 ## 4. Deploy to heroku
 * ```$ heroku login```
